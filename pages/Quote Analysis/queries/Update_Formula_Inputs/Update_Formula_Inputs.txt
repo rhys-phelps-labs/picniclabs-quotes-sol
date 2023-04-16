@@ -1,0 +1,14 @@
+UPDATE public.quotes
+  SET product_name = '{{updProductName.selectedOptionValue}}',
+	    xol_premium_est = {{updXOL.inputText}},
+      weight_claims_exp = {{updWeightClaims.inputText}},
+			mutual_profit_margin = {{updProfitMargin.inputText}},
+			declared_building_val_adj = {{updDecValAdjuster.inputText}},
+			loading_discount = {{updLoading.inputText}},
+			is_renewal = {{updIsRenewal.isChecked}},
+			claims_hist_to_incl = {{updClaimsHist.inputText}},
+			claims_aal = {{updClaimsAAL.inputText}},
+			marketing_fee_pct = {{updMarketingFee.inputText}},
+			asset_include_flood = '{{updAssetIncludeFlood.selectedOptionValue}}',
+			payment_term = '{{updPaymentTerm.selectedOptionValue}}'
+  WHERE id = {{ appsmith.store.current_quote.quote_id }};

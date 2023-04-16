@@ -1,0 +1,1 @@
+SELECT Distinct key_name FROM public.nvp;

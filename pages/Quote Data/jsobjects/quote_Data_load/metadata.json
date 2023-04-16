@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "quote_Data_load",
+    "pageId": "Quote Data",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Quote Data_quote_Data_load",
+  "deleted": false,
+  "gitSyncId": "63dc43fd00fef017b89162b4_6407e8cf51fa044369cb4406"
+}

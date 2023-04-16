@@ -1,0 +1,4 @@
+SELECT * 
+FROM public.quote_risks
+WHERE quote = {{this.params.quote_id}}
+ORDER BY id;

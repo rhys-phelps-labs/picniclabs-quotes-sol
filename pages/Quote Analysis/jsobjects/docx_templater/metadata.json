@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "docx_templater",
+    "pageId": "Quote Analysis",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Quote Analysis_docx_templater",
+  "deleted": false,
+  "gitSyncId": "643690c6dfa883672c11f662_64388a513dfff137ac8070d5"
+}

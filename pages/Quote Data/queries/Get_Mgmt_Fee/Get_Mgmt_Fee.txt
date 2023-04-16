@@ -1,0 +1,5 @@
+SELECT *
+FROM public.isr_management_fee
+WHERE product_name = {{this.params.product_name}}
+  AND {{this.params.lookup_value}} >= range_start 
+	AND {{this.params.lookup_value}} <= range_end;

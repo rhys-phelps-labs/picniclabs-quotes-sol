@@ -1,0 +1,34 @@
+{
+  "pages": [
+    {
+      "id": "Quote Data",
+      "isDefault": true
+    },
+    {
+      "id": "Quote Analysis",
+      "isDefault": false
+    },
+    {
+      "id": "Current Quote",
+      "isDefault": false
+    }
+  ],
+  "viewMode": false,
+  "appIsExample": false,
+  "unreadCommentThreads": 0,
+  "color": "#D9E7FF",
+  "icon": "headphones",
+  "unpublishedCustomJSLibs": [
+    {
+      "uidString": "ExcelJS_regeneratorRuntime_https://cdn.jsdelivr.net/npm/exceljs@4.3.0/dist/exceljs.min.js"
+    },
+    {
+      "uidString": "jStat_https://cdn.jsdelivr.net/npm/jStat@1.8.6/dist/jstat.min.js"
+    }
+  ],
+  "publishedCustomJSLibs": [],
+  "evaluationVersion": 2,
+  "applicationVersion": 2,
+  "isManualUpdate": false,
+  "deleted": false
+}

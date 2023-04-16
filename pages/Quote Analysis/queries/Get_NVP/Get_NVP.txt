@@ -1,0 +1,2 @@
+SELECT * FROM public.nvp
+ORDER BY key_name, option_label;

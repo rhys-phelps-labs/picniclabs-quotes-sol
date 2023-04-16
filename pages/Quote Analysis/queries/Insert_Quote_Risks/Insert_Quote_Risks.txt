@@ -1,0 +1,26 @@
+INSERT INTO public.quote_risks
+  (quote, 
+	 building_name, 
+	 "group", 
+	 address, 
+	 replacement_basis, 
+	 building_sum_insured, 
+	 contents_sum_insured, 
+	 "limit", 
+	 professional_fees, 
+	 consequential_loss, 
+	 hurdle, 
+	 anzsic_code, 
+	 no_of_buildings, 
+	 no_levels, 
+	 walls, 
+	 roof, 
+	 year_built, 
+	 fire_protection, 
+	 security_protection, 
+	 heritage_listed, 
+	 asbestos, 
+	 eps_percentage, 
+	 building_type)
+VALUES
+  {{this.params.value_set}};

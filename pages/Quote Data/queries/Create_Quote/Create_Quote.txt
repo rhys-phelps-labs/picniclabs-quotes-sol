@@ -1,0 +1,29 @@
+INSERT INTO public.quotes
+  (name, mutual, tenancy, status, last_modified, last_modified_by,
+	 type, quote_date, quote_expiry, version, marketing_fee_pct,
+	xol_premium_est, weight_claims_exp, mutual_profit_margin,
+	declared_building_val_adj, loading_discount, claims_hist_to_incl,
+	is_renewal, claims_aal, asset_include_flood)
+VALUES
+  (
+    {{ quoteTitle.text }},
+    {{ quoteSelectedMutual.selectedOptionValue }},
+		1,
+		'Draft',
+		now(),
+		{{ appsmith.user.email}},
+		'Business',
+		now(),
+		now() + interval '30 days',
+		0,
+		20,
+		21,
+		10,
+		20,
+		1.0,
+		0,
+		10,
+		false,
+		0,
+		'Asset'		
+	) RETURNING id;

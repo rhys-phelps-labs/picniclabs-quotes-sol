@@ -1,0 +1,1 @@
+DELETE FROM public.quote_risk_ratings WHERE quote = {{this.params.quote_id}};

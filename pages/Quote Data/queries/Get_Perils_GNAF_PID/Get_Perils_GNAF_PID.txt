@@ -1,0 +1,4 @@
+SELECT gnaf.*, remote.remoteness_area_name
+FROM willis.gnaf gnaf
+JOIN willis.remoteness_area remote ON gnaf.postcode = remote.postcode_int
+WHERE gnaf_pid = '{{this.params.gnaf_pid}}';
