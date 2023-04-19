@@ -72,14 +72,10 @@ export default {
 	
 	generateQuoteDoc: async () => {
 	
-		var blob = doc.generate({
-			type: 'blob',
-			mimeType: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
-		});
-		console.log('blob created');
-    const url = URL.createObjectURL(blob);
+		
+    
 		var filename = _.snakeCase(appsmith.store.current_quote.detail.name);
-    await download(url, filename + '.xlsx', "application/docx");	
+    await download(url, filename + '.docx', "application/docx");	
 		
 	},
 	

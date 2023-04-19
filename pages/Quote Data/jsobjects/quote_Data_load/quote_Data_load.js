@@ -428,7 +428,7 @@ export default {
 	},
 	
 	checkAddressAccuracy: async () => {
-		var batch_size = 10;
+		var batch_size = 5;
 		var good_rows = appsmith.store.good_rows;
 		var bad_rows = [];
 		var new_good_rows = [];

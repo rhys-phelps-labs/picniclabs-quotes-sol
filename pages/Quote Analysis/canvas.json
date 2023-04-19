@@ -37,7 +37,7 @@
                 "notification"
               ],
               "topRow": 69,
-              "bottomRow": 43,
+              "bottomRow": 499,
               "parentRowSpace": 10,
               "type": "MODAL_WIDGET",
               "hideCard": false,
@@ -1687,7 +1687,7 @@
                   "key": "defaultSelectedRowIndex"
                 },
                 {
-                  "key": "primaryColumns.Building_Name.computedValue"
+                  "key": "primaryColumns.building_Name.computedValue"
                 }
               ],
               "needsHeightForContent": true,
@@ -1725,8 +1725,8 @@
                 }
               },
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "columnUpdatedAt": 1681454507621,
-              "originalBottomRow": 177,
+              "columnUpdatedAt": 1681694593255,
+              "originalBottomRow": 174,
               "defaultSelectedRowIndices": [
                 0
               ],
@@ -1740,7 +1740,7 @@
                 "Wind_Base",
                 "BAL_Category",
                 "STS_Risk",
-                "Building_Name"
+                "building_Name"
               ],
               "dynamicPropertyPathList": [],
               "displayName": "Table",
@@ -1969,13 +1969,13 @@
                   "validation": {},
                   "cellBackground": ""
                 },
-                "Building_Name": {
+                "building_Name": {
                   "allowCellWrapping": false,
-                  "index": 7,
+                  "index": 0,
                   "width": 150,
-                  "originalId": "Building Name",
-                  "id": "Building_Name",
-                  "alias": "Building Name",
+                  "originalId": "building Name",
+                  "id": "building_Name",
+                  "alias": "building Name",
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
@@ -1990,10 +1990,10 @@
                   "isEditable": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "Building Name",
+                  "label": "building Name",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{AssetListTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Building Name\"]))}}",
+                  "computedValue": "{{AssetListTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"building Name\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -2015,7 +2015,7 @@
               "horizontalAlignment": "LEFT",
               "isVisibleSearch": true,
               "responsiveBehavior": "fill",
-              "originalTopRow": 86,
+              "originalTopRow": 83,
               "isVisiblePagination": true,
               "verticalAlignment": "CENTER"
             },
@@ -7504,7 +7504,7 @@
                       "isLoading": false,
                       "originalTopRow": 21,
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 31,
+                      "originalBottomRow": 28,
                       "isInline": true,
                       "alignment": "left",
                       "minDynamicHeight": 4
@@ -7609,7 +7609,7 @@
               "originalTopRow": 53,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 86,
+              "originalBottomRow": 83,
               "minDynamicHeight": 10
             },
             {
