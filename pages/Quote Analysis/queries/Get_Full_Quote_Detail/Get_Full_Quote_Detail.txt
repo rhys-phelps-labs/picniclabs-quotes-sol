@@ -216,4 +216,5 @@ SELECT
 FROM public.quotes q
 	INNER JOIN public.quote_risks qr ON qr.quote = q.id
 	LEFT JOIN public.quote_risk_ratings qrr ON qrr.quote_risk_id = qr.id
-WHERE q.id = {{this.params.quote_id}};
+WHERE q.id = {{this.params.quote_id}}
+ORDER BY qr.building_name;

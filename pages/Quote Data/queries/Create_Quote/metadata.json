@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "INSERT INTO public.quotes\n  (name, mutual, tenancy, status, last_modified, last_modified_by,\n\t type, quote_date, quote_expiry, version, marketing_fee_pct,\n\txol_premium_est, weight_claims_exp, mutual_profit_margin,\n\tdeclared_building_val_adj, loading_discount, claims_hist_to_incl,\n\tis_renewal, claims_aal, asset_include_flood)\nVALUES\n  (\n    {{ quoteTitle.text }},\n    {{ quoteSelectedMutual.selectedOptionValue }},\n\t\t1,\n\t\t'Draft',\n\t\tnow(),\n\t\t{{ appsmith.user.email}},\n\t\t'Business',\n\t\tnow(),\n\t\tnow() + interval '30 days',\n\t\t0,\n\t\t20,\n\t\t21,\n\t\t10,\n\t\t20,\n\t\t1.0,\n\t\t0,\n\t\t10,\n\t\tfalse,\n\t\t0,\n\t\t'Asset'\t\t\n\t) RETURNING id;",
+      "body": "INSERT INTO public.quotes\n  (name, mutual, tenancy, status, last_modified, last_modified_by,\n\t type, quote_date, quote_expiry, version, marketing_fee_pct,\n\txol_premium_est, weight_claims_exp, mutual_profit_margin,\n\tdeclared_building_val_adj, loading_discount, claims_hist_to_incl,\n\tis_renewal, claims_aal, asset_include_flood)\nVALUES\n  (\n    {{ quoteTitle.text }},\n    {{ quoteSelectedMutual.selectedOptionValue }},\n\t\t1,\n\t\t'Draft',\n\t\tnow(),\n\t\t{{ appsmith.user.email}},\n\t\t'Business',\n\t\tnow(),\n\t\tnow() + interval '30 days',\n\t\t0,\n\t\t20,\n\t\t21,\n\t\t10,\n\t\t10,\n\t\t1.0,\n\t\t0,\n\t\t10,\n\t\tfalse,\n\t\t0,\n\t\t'Asset'\t\t\n\t) RETURNING id;",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
