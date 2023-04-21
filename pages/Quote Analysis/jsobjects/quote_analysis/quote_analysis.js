@@ -387,6 +387,7 @@ export default {
 				current_quote.detail['asset_include_flood'] = updAssetIncludeFlood.selectedOptionValue;
 				current_quote.detail['payment_term_loading'] = updPayTermLoading.text;
 				current_quote.detail['payment_term'] = updPaymentTerm.selectedOptionValue;
+				current_quote.detail['mgmt_fee_pct'] = updMgmtFeePct.text;
 
 				storeValue('current_quote', current_quote, false);
 			})

@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1740,
+          "bottomRow": 1750,
           "containerStyle": "none",
           "snapRows": 128,
           "parentRowSpace": 1,
@@ -1644,7 +1644,7 @@
               "borderColor": "#E0DEDE",
               "isVisibleDownload": true,
               "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
-              "topRow": 83,
+              "topRow": 84,
               "isSortable": true,
               "type": "TABLE_WIDGET_V2",
               "inlineEditingSaveOption": "ROW_LEVEL",
@@ -1725,8 +1725,8 @@
                 }
               },
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "columnUpdatedAt": 1681941361203,
-              "originalBottomRow": 174,
+              "columnUpdatedAt": 1682047108174,
+              "originalBottomRow": 175,
               "defaultSelectedRowIndices": [
                 0
               ],
@@ -1744,7 +1744,7 @@
               ],
               "dynamicPropertyPathList": [],
               "displayName": "Table",
-              "bottomRow": 174,
+              "bottomRow": 175,
               "columnWidthMap": {
                 "task": 245,
                 "step": 70,
@@ -2015,7 +2015,7 @@
               "horizontalAlignment": "LEFT",
               "isVisibleSearch": true,
               "responsiveBehavior": "fill",
-              "originalTopRow": 83,
+              "originalTopRow": 84,
               "isVisiblePagination": true,
               "verticalAlignment": "CENTER"
             },
@@ -5266,7 +5266,7 @@
                 "group"
               ],
               "topRow": 19,
-              "bottomRow": 45,
+              "bottomRow": 50,
               "parentRowSpace": 10,
               "type": "CONTAINER_WIDGET",
               "hideCard": false,
@@ -5287,7 +5287,7 @@
                   "widgetName": "Canvas22",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 260,
+                  "bottomRow": 310,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": false,
@@ -5925,6 +5925,63 @@
                       "minDynamicHeight": 4
                     },
                     {
+                      "widgetName": "MgmtFeeAmtAmt",
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+                      "searchTags": [
+                        "typography",
+                        "paragraph",
+                        "label"
+                      ],
+                      "topRow": 25,
+                      "bottomRow": 29,
+                      "parentRowSpace": 10,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "overflow": "NONE",
+                      "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+                      "parentColumnSpace": 6.905517578125,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 21,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "truncateButtonColor"
+                        },
+                        {
+                          "key": "fontFamily"
+                        },
+                        {
+                          "key": "borderRadius"
+                        },
+                        {
+                          "key": "text"
+                        }
+                      ],
+                      "shouldTruncate": false,
+                      "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "text": "{{appsmith.store.current_quote ?formatting.formatCurrency_rounded(appsmith.store.current_quote.detail.mgmt_fee_amt) : ''}}",
+                      "key": "khntu5eum5",
+                      "isDeprecated": false,
+                      "rightColumn": 36,
+                      "textAlign": "RIGHT",
+                      "dynamicHeight": "FIXED",
+                      "widgetId": "bgwdegdvin",
+                      "minWidth": 450,
+                      "isVisible": true,
+                      "fontStyle": "",
+                      "textColor": "#231F20",
+                      "version": 1,
+                      "parentId": "0hn9enhtfs",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "responsiveBehavior": "fill",
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "maxDynamicHeight": 9000,
+                      "fontSize": "0.875rem",
+                      "minDynamicHeight": 4
+                    },
+                    {
                       "widgetName": "SumTropicsAmt",
                       "displayName": "Text",
                       "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
@@ -6243,6 +6300,60 @@
                       "textAlign": "LEFT",
                       "dynamicHeight": "FIXED",
                       "widgetId": "w9gral00cf",
+                      "minWidth": 450,
+                      "isVisible": true,
+                      "fontStyle": "",
+                      "textColor": "#231F20",
+                      "version": 1,
+                      "parentId": "0hn9enhtfs",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "responsiveBehavior": "fill",
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "maxDynamicHeight": 9000,
+                      "fontSize": "0.875rem",
+                      "minDynamicHeight": 4
+                    },
+                    {
+                      "widgetName": "MgmtFeeAmtLbl",
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
+                      "searchTags": [
+                        "typography",
+                        "paragraph",
+                        "label"
+                      ],
+                      "topRow": 25,
+                      "bottomRow": 29,
+                      "parentRowSpace": 10,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "overflow": "NONE",
+                      "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+                      "parentColumnSpace": 6.905517578125,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 0,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "truncateButtonColor"
+                        },
+                        {
+                          "key": "fontFamily"
+                        },
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
+                      "shouldTruncate": false,
+                      "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "text": "Management Fee Amount",
+                      "key": "khntu5eum5",
+                      "isDeprecated": false,
+                      "rightColumn": 20,
+                      "textAlign": "LEFT",
+                      "dynamicHeight": "FIXED",
+                      "widgetId": "afs57u9bs4",
                       "minWidth": 450,
                       "isVisible": true,
                       "fontStyle": "",
@@ -6616,7 +6727,7 @@
               "originalTopRow": 19,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 45,
+              "originalBottomRow": 50,
               "minDynamicHeight": 10
             },
             {
@@ -6630,7 +6741,7 @@
                 "group"
               ],
               "topRow": 53,
-              "bottomRow": 83,
+              "bottomRow": 84,
               "parentRowSpace": 10,
               "type": "FORM_WIDGET",
               "hideCard": false,
@@ -6652,7 +6763,7 @@
                   "widgetName": "Canvas23",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 300,
+                  "bottomRow": 310,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": false,
@@ -6956,8 +7067,8 @@
                         "number",
                         "textarea"
                       ],
-                      "topRow": 12,
-                      "bottomRow": 16,
+                      "topRow": 18,
+                      "bottomRow": 22,
                       "parentRowSpace": 10,
                       "labelWidth": "10",
                       "autoFocus": false,
@@ -7071,6 +7182,68 @@
                     },
                     {
                       "boxShadow": "none",
+                      "widgetName": "updMgmtFeePct",
+                      "displayName": "Input",
+                      "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
+                      "searchTags": [
+                        "form",
+                        "text input",
+                        "number",
+                        "textarea"
+                      ],
+                      "topRow": 12,
+                      "bottomRow": 16,
+                      "parentRowSpace": 10,
+                      "labelWidth": "10",
+                      "autoFocus": false,
+                      "type": "INPUT_WIDGET_V2",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 15.3203125,
+                      "dynamicTriggerPathList": [],
+                      "resetOnSubmit": true,
+                      "leftColumn": 16,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "accentColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        },
+                        {
+                          "key": "defaultText"
+                        }
+                      ],
+                      "labelPosition": "Left",
+                      "labelStyle": "",
+                      "inputType": "NUMBER",
+                      "isDisabled": false,
+                      "key": "c9i2oix4gm",
+                      "labelTextSize": "0.875rem",
+                      "isRequired": true,
+                      "isDeprecated": false,
+                      "rightColumn": 28,
+                      "dynamicHeight": "FIXED",
+                      "widgetId": "1k05fp41u7",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "showStepArrows": false,
+                      "minWidth": 450,
+                      "isVisible": true,
+                      "label": "Management Fee %",
+                      "version": 2,
+                      "parentId": "lhq4oe2gak",
+                      "labelAlignment": "left",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "responsiveBehavior": "fill",
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "maxDynamicHeight": 9000,
+                      "iconAlign": "left",
+                      "defaultText": "{{appsmith.store.current_quote ?appsmith.store.current_quote.detail.mgmt_fee_pct : ''}}",
+                      "minDynamicHeight": 4
+                    },
+                    {
+                      "boxShadow": "none",
                       "widgetName": "updClaimsHist",
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
@@ -7142,8 +7315,8 @@
                         "number",
                         "textarea"
                       ],
-                      "topRow": 12,
-                      "bottomRow": 16,
+                      "topRow": 16,
+                      "bottomRow": 20,
                       "parentRowSpace": 10,
                       "labelWidth": "7",
                       "autoFocus": false,
@@ -7270,8 +7443,8 @@
                         "number",
                         "textarea"
                       ],
-                      "topRow": 16,
-                      "bottomRow": 20,
+                      "topRow": 22,
+                      "bottomRow": 26,
                       "parentRowSpace": 10,
                       "labelWidth": "10",
                       "autoFocus": false,
@@ -7455,8 +7628,8 @@
                       "searchTags": [
                         "choice"
                       ],
-                      "topRow": 21,
-                      "bottomRow": 28,
+                      "topRow": 22,
+                      "bottomRow": 29,
                       "parentRowSpace": 10,
                       "labelWidth": 5,
                       "type": "RADIO_GROUP_WIDGET",
@@ -7502,9 +7675,9 @@
                       "labelAlignment": "left",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "originalTopRow": 21,
+                      "originalTopRow": 22,
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 28,
+                      "originalBottomRow": 29,
                       "isInline": true,
                       "alignment": "left",
                       "minDynamicHeight": 4
@@ -7609,7 +7782,7 @@
               "originalTopRow": 53,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 83,
+              "originalBottomRow": 84,
               "minDynamicHeight": 10
             },
             {

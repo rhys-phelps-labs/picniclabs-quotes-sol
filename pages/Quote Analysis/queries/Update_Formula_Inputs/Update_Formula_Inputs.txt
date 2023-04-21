@@ -10,5 +10,6 @@ UPDATE public.quotes
 			claims_aal = {{updClaimsAAL.inputText}},
 			marketing_fee_pct = {{updMarketingFee.inputText}},
 			asset_include_flood = '{{updAssetIncludeFlood.selectedOptionValue}}',
-			payment_term = '{{updPaymentTerm.selectedOptionValue}}'
+			payment_term = '{{updPaymentTerm.selectedOptionValue}}',
+			mgmt_fee_pct = {{updMgmtFeePct.inputText}}
   WHERE id = {{ appsmith.store.current_quote.quote_id }};

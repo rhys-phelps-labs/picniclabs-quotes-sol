@@ -155,9 +155,9 @@ export default {
 		}
 
 		PricingProgress.progress = 50;
-		
+
 		// price whole quote
-		await this.calculateManagementFee(current_quote.detail.product_name);
+		
 		var priceSummary = appsmith.store.price_summary;
 		current_quote.detail['risk_total'] = priceSummary.att_risk_total + priceSummary.lrg_risk_total + priceSummary.wea_risk_total;
 		current_quote.detail['att_risk_total'] = priceSummary.att_risk_total;
@@ -174,6 +174,7 @@ export default {
 		current_quote.detail['xol_weighted_contribution'] = current_quote.detail.xol_total * ( 1.0 - (current_quote.detail.weight_claims_exp/100)) + (current_quote.detail.claims_aal * (current_quote.detail.weight_claims_exp/100) * (current_quote.detail.xol_premium_est/100));
 		current_quote.detail['profit_weighted_contribution'] = current_quote.detail.profit_total * ( 1.0 - (current_quote.detail.weight_claims_exp/100)) + (current_quote.detail.claims_aal * (current_quote.detail.weight_claims_exp/100) * (current_quote.detail.mutual_profit_margin/100));
 		
+		await this.calculateManagementFee(current_quote.detail.product_name);	
 		current_quote.detail['total_contribution'] = (priceSummary['mgmt_fee_total'] + 
 																									current_quote.detail.xol_weighted_contribution + 
 																									current_quote.detail.profit_weighted_contribution + 

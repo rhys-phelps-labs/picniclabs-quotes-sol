@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "UPDATE public.quotes\n  SET product_name = '{{updProductName.selectedOptionValue}}',\n\t    xol_premium_est = {{updXOL.inputText}},\n      weight_claims_exp = {{updWeightClaims.inputText}},\n\t\t\tmutual_profit_margin = {{updProfitMargin.inputText}},\n\t\t\tdeclared_building_val_adj = {{updDecValAdjuster.inputText}},\n\t\t\tloading_discount = {{updLoading.inputText}},\n\t\t\tis_renewal = {{updIsRenewal.isChecked}},\n\t\t\tclaims_hist_to_incl = {{updClaimsHist.inputText}},\n\t\t\tclaims_aal = {{updClaimsAAL.inputText}},\n\t\t\tmarketing_fee_pct = {{updMarketingFee.inputText}},\n\t\t\tasset_include_flood = '{{updAssetIncludeFlood.selectedOptionValue}}',\n\t\t\tpayment_term = '{{updPaymentTerm.selectedOptionValue}}'\n  WHERE id = {{ appsmith.store.current_quote.quote_id }};\n",
+      "body": "UPDATE public.quotes\n  SET product_name = '{{updProductName.selectedOptionValue}}',\n\t    xol_premium_est = {{updXOL.inputText}},\n      weight_claims_exp = {{updWeightClaims.inputText}},\n\t\t\tmutual_profit_margin = {{updProfitMargin.inputText}},\n\t\t\tdeclared_building_val_adj = {{updDecValAdjuster.inputText}},\n\t\t\tloading_discount = {{updLoading.inputText}},\n\t\t\tis_renewal = {{updIsRenewal.isChecked}},\n\t\t\tclaims_hist_to_incl = {{updClaimsHist.inputText}},\n\t\t\tclaims_aal = {{updClaimsAAL.inputText}},\n\t\t\tmarketing_fee_pct = {{updMarketingFee.inputText}},\n\t\t\tasset_include_flood = '{{updAssetIncludeFlood.selectedOptionValue}}',\n\t\t\tpayment_term = '{{updPaymentTerm.selectedOptionValue}}',\n\t\t\tmgmt_fee_pct = {{updMgmtFeePct.inputText}}\n  WHERE id = {{ appsmith.store.current_quote.quote_id }};\n",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -44,6 +44,7 @@
       "updIsRenewal.isChecked",
       "updLoading.inputText",
       "updMarketingFee.inputText",
+      "updMgmtFeePct.inputText",
       "updPaymentTerm.selectedOptionValue",
       "updProductName.selectedOptionValue",
       "updProfitMargin.inputText",
