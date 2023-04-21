@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "buildDocxTemplaterMergeData",
-    "fullyQualifiedName": "docx_templater.buildDocxTemplaterMergeData",
+    "name": "downloadDocx",
+    "fullyQualifiedName": "docx_templater.downloadDocx",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -16,12 +16,12 @@
     "pageId": "Quote Analysis",
     "collectionId": "Quote Analysis_docx_templater",
     "actionConfiguration": {
-      "timeoutInMillisecond": 10000,
+      "timeoutInMillisecond": 0,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "selfReferencingDataPaths": [],
       "jsArguments": [],
-      "isAsync": false
+      "isAsync": true
     },
     "executeOnLoad": false,
     "dynamicBindingPathList": [
@@ -37,7 +37,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Quote Analysis_docx_templater.buildDocxTemplaterMergeData",
+  "id": "Quote Analysis_docx_templater.downloadDocx",
   "deleted": false,
-  "gitSyncId": "643690c6dfa883672c11f662_64388bb03dfff137ac8070e0"
+  "gitSyncId": "643690c6dfa883672c11f662_64422c6f51ce6775c1a75e49"
 }

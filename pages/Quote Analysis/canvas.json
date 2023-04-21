@@ -37,7 +37,7 @@
                 "notification"
               ],
               "topRow": 69,
-              "bottomRow": 499,
+              "bottomRow": 43,
               "parentRowSpace": 10,
               "type": "MODAL_WIDGET",
               "hideCard": false,
@@ -1687,7 +1687,7 @@
                   "key": "defaultSelectedRowIndex"
                 },
                 {
-                  "key": "primaryColumns.building_Name.computedValue"
+                  "key": "primaryColumns.Building_Name.computedValue"
                 }
               ],
               "needsHeightForContent": true,
@@ -1725,7 +1725,7 @@
                 }
               },
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "columnUpdatedAt": 1682047108174,
+              "columnUpdatedAt": 1682058503007,
               "originalBottomRow": 175,
               "defaultSelectedRowIndices": [
                 0
@@ -1740,7 +1740,7 @@
                 "Wind_Base",
                 "BAL_Category",
                 "STS_Risk",
-                "building_Name"
+                "Building_Name"
               ],
               "dynamicPropertyPathList": [],
               "displayName": "Table",
@@ -1969,13 +1969,13 @@
                   "validation": {},
                   "cellBackground": ""
                 },
-                "building_Name": {
+                "Building_Name": {
                   "allowCellWrapping": false,
-                  "index": 0,
+                  "index": 7,
                   "width": 150,
-                  "originalId": "building Name",
-                  "id": "building_Name",
-                  "alias": "building Name",
+                  "originalId": "Building Name",
+                  "id": "Building_Name",
+                  "alias": "Building Name",
                   "horizontalAlignment": "LEFT",
                   "verticalAlignment": "CENTER",
                   "columnType": "text",
@@ -1990,10 +1990,10 @@
                   "isEditable": false,
                   "isCellVisible": true,
                   "isDerived": false,
-                  "label": "building Name",
+                  "label": "Building Name",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{AssetListTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"building Name\"]))}}",
+                  "computedValue": "{{AssetListTable.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Building Name\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -18264,6 +18264,9 @@
               "dynamicTriggerPathList": [
                 {
                   "key": "menuItems.menuItem1.onClick"
+                },
+                {
+                  "key": "menuItems.menuItemgu3z4qa866.onClick"
                 }
               ],
               "leftColumn": 33,
@@ -18290,6 +18293,15 @@
                   "isDisabled": false,
                   "index": 0,
                   "onClick": "{{report.createExcelReport()}}"
+                },
+                "menuItemgu3z4qa866": {
+                  "id": "menuItemgu3z4qa866",
+                  "index": 1,
+                  "label": "Generate Quote (docx)",
+                  "widgetId": "6zhle9jby4",
+                  "isDisabled": false,
+                  "isVisible": true,
+                  "onClick": "{{docx_templater.downloadDocx()}}"
                 }
               },
               "isVisible": true,
