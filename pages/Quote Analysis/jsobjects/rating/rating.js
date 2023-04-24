@@ -174,7 +174,8 @@ export default {
 		current_quote.detail['xol_weighted_contribution'] = current_quote.detail.xol_total * ( 1.0 - (current_quote.detail.weight_claims_exp/100)) + (current_quote.detail.claims_aal * (current_quote.detail.weight_claims_exp/100) * (current_quote.detail.xol_premium_est/100));
 		current_quote.detail['profit_weighted_contribution'] = current_quote.detail.profit_total * ( 1.0 - (current_quote.detail.weight_claims_exp/100)) + (current_quote.detail.claims_aal * (current_quote.detail.weight_claims_exp/100) * (current_quote.detail.mutual_profit_margin/100));
 		
-		await this.calculateManagementFee(current_quote.detail.product_name);	
+		await this.calculateManagementFee(current_quote.detail.product_name);
+		priceSummary = appsmith.store.price_summary;
 		current_quote.detail['total_contribution'] = (priceSummary['mgmt_fee_total'] + 
 																									current_quote.detail.xol_weighted_contribution + 
 																									current_quote.detail.profit_weighted_contribution + 

@@ -7,10 +7,6 @@
     {
       "id": "Quote Analysis",
       "isDefault": false
-    },
-    {
-      "id": "Current Quote",
-      "isDefault": false
     }
   ],
   "viewMode": false,
