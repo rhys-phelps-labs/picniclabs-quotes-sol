@@ -176,6 +176,7 @@ export default {
 		
 		await this.calculateManagementFee(current_quote.detail.product_name);
 		priceSummary = appsmith.store.price_summary;
+		/*
 		current_quote.detail['total_contribution'] = (priceSummary['mgmt_fee_total'] + 
 																									current_quote.detail.xol_weighted_contribution + 
 																									current_quote.detail.profit_weighted_contribution + 
@@ -187,11 +188,25 @@ export default {
 																			 					  (1.0 - (current_quote.detail.marketing_fee_pct/100)) * 
 																									(1.0 + (current_quote.detail.loading_discount/100 )) *
 																									(1.0 + (current_quote.detail.payment_term_loading/100));
+		*/
+		current_quote.detail['total_contribution'] = (current_quote.detail.xol_weighted_contribution + 
+																									current_quote.detail.profit_weighted_contribution + 
+																			 						(current_quote.detail.risk_total * 
+																									 (1.0 - (current_quote.detail.weight_claims_exp/100))) + 
+																									current_quote.detail.claims_aal * 
+																									1.1 *
+																									(current_quote.detail.weight_claims_exp/100)) /
+																									(1.0 - (current_quote.detail.mgmt_fee_pct/100)) / 
+																			 					  (1.0 - (current_quote.detail.marketing_fee_pct/100)) * 
+																									(1.0 + (current_quote.detail.loading_discount/100 )) *
+																									(1.0 + (current_quote.detail.payment_term_loading/100));
+		
 		
 		current_quote.detail['total_contribution_excl_gst'] = current_quote.detail.total_contribution / 1.1;
 		current_quote.detail['gst'] = current_quote.detail.total_contribution_excl_gst * 0.1;
 		current_quote.detail['marketing_fee_amt'] = current_quote.detail.total_contribution_excl_gst * (current_quote.detail.marketing_fee_pct / 100);
 		current_quote.detail['base_contribution'] = current_quote.detail.total_contribution_excl_gst * (1.0 - current_quote.detail.marketing_fee_pct/ 100);
+		current_quote.detail['mgmt_fee_amt'] = current_quote.detail.base_contribution * (current_quote.detail.mgmt_fee_pct / 100);
 		
 		current_quote.detail['total_properties_tropic'] = priceSummary['total_properties_tropic'];
 		current_quote.detail['total_properties_nontropic'] = priceSummary['total_properties_nontropic'];
