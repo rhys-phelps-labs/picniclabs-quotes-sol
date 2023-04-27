@@ -73,6 +73,8 @@ INSERT INTO public.quote_risks
 	 accurate,
 	 loqate_id,
 	 remoteness_area,
-	 include_flood)
+	 include_flood,
+	 building_make_safe,
+	 contents_make_safe)
 VALUES
   {{this.params.value_set}};

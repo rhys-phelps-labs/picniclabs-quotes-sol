@@ -254,7 +254,9 @@ export default {
 			'Asbestos': errAsbestos.inputText,
 			'EPS Percentage': errEPS.inputText,
 			'Building Type': errBuildingType.inputText,
-			'Include Flood': errIncludeFlood.inputText
+			'Include Flood': errIncludeFlood.inputText,
+			'building_make_safe': errLimit.value * 0.20,
+			'contents_make_safe': errContentsSum.value * 0.10
 		};
 		
 		var good_rows = appsmith.store.good_rows;
@@ -368,7 +370,9 @@ export default {
 					row.data['Accurate'] + "," +
 					"'" + row.data['Loqate Id'] + "'," +
 					"'" + row.data.Perils.remoteness_area_name + "'," + 
-					row.data['Include Flood'] + ")";
+					row.data['Include Flood'] + "," +
+					row.data['building_make_safe'] + "," + 
+					row.data['contents_make_safe'] + ")";
 			console.log(qstr);
 			insert_rows.push(qstr);
 		}

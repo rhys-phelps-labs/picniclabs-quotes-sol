@@ -1,0 +1,3 @@
+SELECT name as "label", id as "value"
+FROM public.content_generation
+ORDER BY name;

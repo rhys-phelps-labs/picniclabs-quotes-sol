@@ -260,12 +260,12 @@ export default {
 		}
 		
 		price['rating_process'] = 'js appsmith';
-		price['rating_version'] = 'v1.0';
+		price['rating_version'] = 'v1.1';
 		price['quote_risk_id'] = input.data.quote_id;
 		price['valuation'] = input.data.limit + input.data.contents_sum_insured;
 		price['total_sum_insured'] = (input.data.building_sum_insured + input.data.contents_sum_insured + input.data.consequential_loss) * input.data.declared_value_adjustment;
 		
-		if (input.data.building_sum_insured == 0 ) {
+		if (input.data.building_sum_insured === 0 ) {
 			price['cbc_ratio'] = 1;		
 		} else {
 			price['cbc_ratio'] = input.data.limit / input.data.building_sum_insured;

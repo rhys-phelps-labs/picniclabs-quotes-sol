@@ -114,8 +114,16 @@ export default {
 		current_quote.detail['asset_include_flood'] = Get_Full_Quote_Detail.data[0].asset_include_flood;
 		current_quote.detail['payment_term_loading'] = Get_Full_Quote_Detail.data[0].payment_term_loading;
 		current_quote.detail['payment_term'] = Get_Full_Quote_Detail.data[0].payment_term;
-		
-		
+		current_quote.detail['company_name'] = Get_Full_Quote_Detail.data[0].company_name;
+		current_quote.detail['full_name'] = Get_Full_Quote_Detail.data[0].full_name;
+		current_quote.detail['first_name'] = Get_Full_Quote_Detail.data[0].first_name;
+		current_quote.detail['bill_to_street'] = Get_Full_Quote_Detail.data[0].bill_to_street;
+		current_quote.detail['bill_to_city'] = Get_Full_Quote_Detail.data[0].bill_to_city;
+		current_quote.detail['bill_to_state'] = Get_Full_Quote_Detail.data[0].bill_to_state;
+		current_quote.detail['bill_to_postcode'] = Get_Full_Quote_Detail.data[0].bill_to_postcode;
+		current_quote.detail['bill_to_phone'] = Get_Full_Quote_Detail.data[0].bill_to_phone;
+		current_quote.detail['bill_to_email'] = Get_Full_Quote_Detail.data[0].bill_to_email;
+	
 		
 		for (var v in Get_Full_Quote_Detail.data) {
 			
@@ -155,6 +163,8 @@ export default {
 			data['longitude'] = Get_Full_Quote_Detail.data[v].longitude;
 			data['longitude'] = Get_Full_Quote_Detail.data[v].longitude;
 			data['risk_include_flood'] = Get_Full_Quote_Detail.data[v].risk_include_flood;
+			data['building_make_safe'] = Get_Full_Quote_Detail.data[v].building_make_safe;
+			data['contents_make_safe'] = Get_Full_Quote_Detail.data[v].contents_make_safe;
 			
 			perils['gc_flag'] = Get_Full_Quote_Detail.data[v].gc_flag;
 			perils['flood_depth_20'] = Get_Full_Quote_Detail.data[v].flood_depth_20;
@@ -300,6 +310,8 @@ export default {
 		upd_risk.data['latitude'] = qaLatitude.inputText;
 		upd_risk.data['longitude'] = qaLongitude.inputText;
 		upd_risk.data['risk_include_flood'] = qaIncludeFlood.isChecked;
+		upd_risk.data['building_make_safe'] = qaBuildingSI.value * 0.20;
+		upd_risk.data['contents_make_safe'] = qaContentsSI.value * 0.10;
 		
 		current_quote.risks[idx] = upd_risk;
 		

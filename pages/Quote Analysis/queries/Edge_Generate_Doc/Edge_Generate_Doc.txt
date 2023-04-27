@@ -1,4 +1,4 @@
 {
-	id: 1,
-	entity_id: {{appsmith.store.current_quote.quote_id}}
+	id: {{this.params.id}},
+	entity_id: {{this.params.entity_id}}
 }

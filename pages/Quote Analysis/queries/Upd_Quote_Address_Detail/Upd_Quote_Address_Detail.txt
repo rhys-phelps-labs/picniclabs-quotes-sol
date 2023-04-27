@@ -1,0 +1,12 @@
+UPDATE public.quotes
+  SET company_name = '{{gdCompanyName.inputText}}',
+	full_name = '{{gdFullName.inputText}}',
+	first_name = '{{gdFirstName.inputText}}',
+	bill_to_street = '{{gdStreet.inputText}}',
+	bill_to_city = '{{gdCity.inputText}}',
+	bill_to_state = '{{gdState.inputText}}',
+	bill_to_postcode = '{{gdPostcode.inputText}}',
+	bill_to_phone = '{{gdPhone.inputText}}',
+	bill_to_email = '{{gdEmail.inputText}}'
+	
+  WHERE id = {{ appsmith.store.current_quote.quote_id }};
