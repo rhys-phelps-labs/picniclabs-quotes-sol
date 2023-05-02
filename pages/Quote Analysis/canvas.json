@@ -1725,8 +1725,8 @@
                 }
               },
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "columnUpdatedAt": 1683005706975,
-              "originalBottomRow": 177,
+              "columnUpdatedAt": 1683006106074,
+              "originalBottomRow": 180,
               "defaultSelectedRowIndices": [
                 0
               ],
@@ -2015,7 +2015,7 @@
               "horizontalAlignment": "LEFT",
               "isVisibleSearch": true,
               "responsiveBehavior": "fill",
-              "originalTopRow": 86,
+              "originalTopRow": 89,
               "isVisiblePagination": true,
               "verticalAlignment": "CENTER"
             },
@@ -7677,7 +7677,7 @@
                       "isLoading": false,
                       "originalTopRow": 22,
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 29,
+                      "originalBottomRow": 32,
                       "isInline": true,
                       "alignment": "left",
                       "minDynamicHeight": 4
@@ -7782,7 +7782,7 @@
               "originalTopRow": 55,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 86,
+              "originalBottomRow": 89,
               "minDynamicHeight": 10
             },
             {
@@ -17727,10 +17727,10 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "responsiveBehavior": "fill",
-              "originalTopRow": 5,
+              "originalTopRow": 6,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 9,
+              "originalBottomRow": 10,
               "fontSize": "0.875rem",
               "minDynamicHeight": 4
             },
@@ -17842,7 +17842,7 @@
               "originalTopRow": 1,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 5,
+              "originalBottomRow": 6,
               "fontSize": "0.875rem",
               "minDynamicHeight": 4
             },
