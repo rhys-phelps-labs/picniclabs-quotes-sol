@@ -597,7 +597,7 @@ export default {
 		fix_row.data['Accurate'] = true;
 		await Get_Perils_GNAF_PID.run({gnaf_pid : fix_row.data['GNAF PID']});
 		
-		if(Get_Perils_GNAF_PID.data) {
+		if(Get_Perils_GNAF_PID.data[0]) {
 		
 			fix_row.data['Perils'] = Get_Perils_GNAF_PID.data[0];
 			fix_row.data['State'] = Get_Perils_GNAF_PID.data[0].state;
