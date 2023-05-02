@@ -371,8 +371,8 @@ export default {
 					"'" + row.data['Loqate Id'] + "'," +
 					"'" + row.data.Perils.remoteness_area_name + "'," + 
 					row.data['Include Flood'] + "," +
-					row.data['building_make_safe'] + "," + 
-					row.data['contents_make_safe'] + ")";
+					(row.data['Limit'] * 0.20) + "," + 
+					(row.data['Contents Sum Insured incl GST'] * 0.10) + ")";
 			console.log(qstr);
 			insert_rows.push(qstr);
 		}
