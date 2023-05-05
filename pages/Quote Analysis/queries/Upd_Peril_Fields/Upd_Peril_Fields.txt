@@ -1,5 +1,5 @@
 UPDATE public.quote_risks
-  SET gc_flag = {{qagcflag.inputText}},
+  SET gc_flag = '{{qagcflag.inputText}}',
 	flood_depth_20 = {{qaFloodDepth20.inputText}},
 	flood_depth_50 = {{qaFloodDepth50.inputText}},
 	flood_depth_100 = {{qaFloodDepth100.inputText}},
@@ -16,9 +16,9 @@ UPDATE public.quote_risks
 	ga_catchment = {{qaCatchment.inputText}},
 	resolution = {{qaResolution.inputText}},
 	levee_information = {{qalevee.inputText}},
-	notes_id1 = {{qaNotes1.inputText}},
-	notes_id2 = {{qaNotes2.inputText}},
-	wfm_coverage_flag = {{qaWFM.inputText}},
+	notes_id1 = '{{qaNotes1.inputText}}',
+	notes_id2 = '{{qaNotes2.inputText}}',
+	wfm_coverage_flag = '{{qaWFM.inputText}}',
 	fdi = {{qaFDI.inputText}},
 	veg_type = {{qaVegType.inputText}},
 	distance = {{qaDistance.inputText}},
@@ -40,7 +40,7 @@ UPDATE public.quote_risks
 	reanalysis = {{qaReanalysis.inputText}},
 	obs_size_100 = {{qaOBSSize.inputText}},
 	dist_coast = {{qaDistCoast.inputText}},
-	terrain_location = {{qaTerrainLocation.inputText}},
-	terrain_resolution = {{qaTerrainResolution.inputText}},
-	remoteness_area = {{qaRemotenessArea.inputText}}
+	terrain_location = '{{qaTerrainLocation.inputText}}',
+	terrain_resolution = '{{qaTerrainResolution.inputText}}',
+	remoteness_area = '{{qaRemotenessArea.inputText}}'
   WHERE id = {{this.params.quote_risk_id}};
