@@ -645,13 +645,13 @@ export default {
 	test_getBushfirePeril: () => {
 		var input = {
 			data : {
-				walls: 'Brick',
+				walls: 'Timber',
 				building_sum_insured: 400000,
 				limit: 400000,
 				contents_sum_insured: 10000,
 				consequential_loss: 0,
 				professional_fees: 0,
-				bal_category: 5,
+				bal_category: 1,
 				declared_value_adjustment: 1.1
 			}
 		};

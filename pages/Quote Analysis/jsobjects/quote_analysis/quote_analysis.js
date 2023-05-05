@@ -349,7 +349,7 @@ export default {
 		upd_risk.perils['veg_type'] = qaVegType.inputText;
 		upd_risk.perils['distance'] = qaDistance.inputText;
 		upd_risk.perils['bushfire_attack_level'] = qaBAL.inputText;
-		upd_risk.perils['bal_category'] = qaBALCategory.inputText;
+		upd_risk.perils['bal_category'] = qaBALCategory.text;
 		upd_risk.perils['surroundedness'] = qaSurroundedness.inputText;
 		upd_risk.perils['windgust_5yr_ari'] = qaWindgust5yr.inputText;
 		upd_risk.perils['windgust_10yr_ari'] = qaWindgust10yr.inputText;
