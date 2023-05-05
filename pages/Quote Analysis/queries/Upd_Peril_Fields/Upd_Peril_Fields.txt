@@ -13,7 +13,7 @@ UPDATE public.quote_risks
 	riverine_percentage = {{qaRiverine.inputText}},
 	overland_percentage = {{qaOverland.inputText}},
 	elevation = {{qaElevation.inputText}},
-	ga_catchment = {{qaCatchment.inputText}},
+	ga_catchment = '{{qaCatchment.inputText}}',
 	resolution = {{qaResolution.inputText}},
 	levee_information = {{qalevee.inputText}},
 	notes_id1 = '{{qaNotes1.inputText}}',
