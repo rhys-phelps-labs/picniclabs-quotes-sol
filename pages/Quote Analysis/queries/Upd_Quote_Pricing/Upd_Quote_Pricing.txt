@@ -48,5 +48,6 @@ UPDATE public.quotes
 	heritage_listed_count = {{appsmith.store.current_quote.detail.heritage_listed_count}},
 	commercial_count = {{appsmith.store.current_quote.detail.commercial_count}},
 	payment_term_loading = {{appsmith.store.current_quote.detail.payment_term_loading}},
-	payment_term = '{{appsmith.store.current_quote.detail.payment_term}}'
+	payment_term = '{{appsmith.store.current_quote.detail.payment_term}}',
+	mgmt_fee_amt = {{appsmith.store.current_quote.detail.mgmt_fee_amt}}
 	WHERE id = {{ appsmith.store.current_quote.quote_id }};
