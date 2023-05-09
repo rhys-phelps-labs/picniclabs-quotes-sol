@@ -33,18 +33,18 @@ export default {
        		break;
        }
 			
-		  storeval.push({ 'label': option_label, 'value': val});			
+		  storeval.push({ 'label': option_label, 'value': val}, false);			
 		}
 		
 		console.log(JSON.stringify(nvp_map));
 		for (var i in nvp_map) {
 			console.log(JSON.stringify(nvp_map[i]));
-			storeValue(i, nvp_map[i]);
+			storeValue(i, nvp_map[i], false);
 		}
 
 		// get the list of mutuals
 		await GetActiveMutuals.run();
-		storeValue('MUTUALS', GetActiveMutuals.data);
+		storeValue('MUTUALS', GetActiveMutuals.data, false);
 		
 		return 0;
 	}

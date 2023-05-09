@@ -7120,7 +7120,47 @@
             }
           ]
         },
-        "layoutOnLoadActions": [],
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Quote Data_Distinct_Key_Names_NVP",
+              "name": "Distinct_Key_Names_NVP",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Quote Data_GetActiveMutuals",
+              "name": "GetActiveMutuals",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Quote Data_Get_NVP",
+              "name": "Get_NVP",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Quote Data_nvp.setNVPArrays",
+              "name": "nvp.setNVPArrays",
+              "collectionId": "Quote Data_nvp",
+              "confirmBeforeExecute": false,
+              "pluginType": "JS",
+              "jsonPathKeys": [
+                "async () => {\n  await Distinct_Key_Names_NVP.run();\n  console.log(JSON.stringify(Distinct_Key_Names_NVP.data));\n  var nvp_map = {};\n  for (var k in Distinct_Key_Names_NVP.data) {\n    console.log(Distinct_Key_Names_NVP.data[k].key_name);\n    nvp_map[Distinct_Key_Names_NVP.data[k].key_name] = [];\n  }\n  await Get_NVP.run();\n  console.log(JSON.stringify(Get_NVP.data));\n  for (var d in Get_NVP.data) {\n    var key = Get_NVP.data[d].key_name;\n    var option_type = Get_NVP.data[d].option_type;\n    var option_label = Get_NVP.data[d].option_label;\n    var storeval = nvp_map[key];\n    console.log('stored value: ' + storeval);\n    var val = '';\n    switch (option_type) {\n      case 'text':\n        val = Get_NVP.data[d].option_value_ch;\n        break;\n      case 'int':\n        val = Get_NVP.data[d].option_value_int;\n        break;\n      case 'float':\n        val = Get_NVP.data[d].option_value_float;\n        break;\n    }\n    storeval.push({\n      'label': option_label,\n      'value': val\n    }, false);\n  }\n  console.log(JSON.stringify(nvp_map));\n  for (var i in nvp_map) {\n    console.log(JSON.stringify(nvp_map[i]));\n    storeValue(i, nvp_map[i], false);\n  }\n  await GetActiveMutuals.run();\n  storeValue('MUTUALS', GetActiveMutuals.data, false);\n  return 0;\n}"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
         "id": "Quote Data",
