@@ -1,0 +1,20 @@
+{
+  "unpublishedCollection": {
+    "name": "picniclabs",
+    "pageId": "Login",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [
+      {
+        "name": "supabase",
+        "value": "{\n  url: 'https://jfbetozeonrhkwbmddkm.supabase.co'\n}"
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "Login_picniclabs",
+  "deleted": false,
+  "gitSyncId": "6450a6dd51ce6775c1a75f6e_6450b24451ce6775c1a75ffc"
+}

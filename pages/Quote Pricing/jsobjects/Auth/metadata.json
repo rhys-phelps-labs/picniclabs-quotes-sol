@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "Auth",
+    "pageId": "Quote Pricing",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Quote Pricing_Auth",
+  "deleted": false,
+  "gitSyncId": "6450a6dd51ce6775c1a75f6e_6450d81e51ce6775c1a7602d"
+}

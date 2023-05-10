@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "mapbox_labs",
+    "pageId": "Helicopter View",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Helicopter View_mapbox_labs",
+  "deleted": false,
+  "gitSyncId": "6450a6dd51ce6775c1a75f6e_645433c751ce6775c1a760b7"
+}

@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "Auth",
+    "pageId": "Helicopter View",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Helicopter View_Auth",
+  "deleted": false,
+  "gitSyncId": "6450a6dd51ce6775c1a75f6e_6458971b51ce6775c1a7619f"
+}
