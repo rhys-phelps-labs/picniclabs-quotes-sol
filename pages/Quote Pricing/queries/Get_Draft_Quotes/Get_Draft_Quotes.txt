@@ -1,0 +1,5 @@
+SELECT id, quote_number, name 
+FROM public.quotes
+WHERE status = 'Draft'
+ORDER BY last_modified DESC, quote_number
+LIMIT 50;
