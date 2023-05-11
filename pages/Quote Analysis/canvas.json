@@ -37,7 +37,7 @@
                 "notification"
               ],
               "topRow": 69,
-              "bottomRow": 43,
+              "bottomRow": 499,
               "parentRowSpace": 10,
               "type": "MODAL_WIDGET",
               "hideCard": false,
@@ -490,7 +490,7 @@
               "isDeprecated": false,
               "rightColumn": 40,
               "detachFromLayout": true,
-              "dynamicHeight": "FIXED",
+              "dynamicHeight": "AUTO_HEIGHT",
               "widgetId": "ymwpavv1v8",
               "canOutsideClickClose": true,
               "canEscapeKeyClose": true,
@@ -498,10 +498,12 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
+              "originalTopRow": 69,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
+              "originalBottomRow": 43,
               "width": 1064,
-              "minDynamicHeight": 24
+              "minDynamicHeight": 10
             },
             {
               "boxShadow": "none",
