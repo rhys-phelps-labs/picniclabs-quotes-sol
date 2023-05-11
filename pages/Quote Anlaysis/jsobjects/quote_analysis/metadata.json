@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "quote_analysis",
+    "pageId": "Quote Anlaysis",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Quote Anlaysis_quote_analysis",
+  "deleted": false,
+  "gitSyncId": "645c54e251ce6775c1a7624b_645c560251ce6775c1a762c8"
+}

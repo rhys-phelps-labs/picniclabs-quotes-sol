@@ -5,7 +5,11 @@
       "isDefault": true
     },
     {
-      "id": "Quote Analysis",
+      "id": "Quote Pricing",
+      "isDefault": false
+    },
+    {
+      "id": "Quote Anlaysis",
       "isDefault": false
     }
   ],

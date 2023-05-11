@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "nvp",
+    "pageId": "Quote Pricing",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Quote Pricing_nvp",
+  "deleted": false,
+  "gitSyncId": "63dc43fd00fef017b89162b4_6417978aec20775f76c4d7b5"
+}

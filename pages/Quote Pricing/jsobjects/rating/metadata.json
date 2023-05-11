@@ -1,0 +1,60 @@
+{
+  "unpublishedCollection": {
+    "name": "rating",
+    "pageId": "Quote Pricing",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [
+      {
+        "name": "ATTRITIONAL",
+        "value": "'att'"
+      },
+      {
+        "name": "LARGE",
+        "value": "'lrg'"
+      },
+      {
+        "name": "WEATHER",
+        "value": "'wea'"
+      },
+      {
+        "name": "TAX_RATE",
+        "value": "1.1"
+      },
+      {
+        "name": "FLOOD_PROB_20",
+        "value": "1.0 - Math.exp(-1.0 / 20.0)"
+      },
+      {
+        "name": "FLOOD_PROB_50",
+        "value": "1.0 - Math.exp(-1.0 / 50.0)"
+      },
+      {
+        "name": "FLOOD_PROB_100",
+        "value": "1.0 - Math.exp(-1.0 / 100.0)"
+      },
+      {
+        "name": "FLOOD_PROB_200",
+        "value": "1.0 - Math.exp(-1.0 / 200.0)"
+      },
+      {
+        "name": "FLOOD_PROB_500",
+        "value": "1.0 - Math.exp(-1.0 / 500.0)"
+      },
+      {
+        "name": "FLOOD_PROB_1000",
+        "value": "1.0 - Math.exp(-1.0 / 1000.0)"
+      },
+      {
+        "name": "FLOOD_PROB_10000",
+        "value": "1.0 - Math.exp(-1.0 / 10000.0)"
+      }
+    ],
+    "userPermissions": []
+  },
+  "id": "Quote Pricing_rating",
+  "deleted": false,
+  "gitSyncId": "63dc43fd00fef017b89162b4_640ac3dd6460723117b3e838"
+}
