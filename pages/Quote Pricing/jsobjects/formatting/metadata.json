@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "formatting",
+    "pageId": "Quote Pricing",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "variables": [],
+    "userPermissions": []
+  },
+  "id": "Quote Pricing_formatting",
+  "deleted": false,
+  "gitSyncId": "63dc43fd00fef017b89162b4_64178b44a144677c94d3b35d"
+}
